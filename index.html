@@ -75,74 +75,7 @@
                             </div>
                         </div>
                     </div>
-<!--                     
-                    {% if 'user' in request.session %}
-                    <div class="col-lg-3 text-right col-md-3">
-                        <ul class="nav-right">
-                            <li class="cart-icon">
-                                <a href="#"><i class="icon_heart_alt"></i><span>{{listcount}}</span></a>
-                                <div class="cart-hover">
-                                    <div class="select-items">
-                                        <table>
-                                            <tbody>
-                                                {% for x in list %}
-                                                <tr>
-                                                    <td class="si-pic"><img src="/media/{{x.list_image}}" width="50px" alt></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                        <p>{{x.list_price}}</p>
-                                                        <h6>{{x.list_name}}</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close"><a href="/delfromlist/{{x.id}}"><i class="ti-close"></i></a></i></td>
-                                                </tr>
-                                                {% endfor %}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="select-button">
-                                        <a href="/wishlist" class="primary-btn view-card">VIEW WISHLIST</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="cart-icon">
-                                <a href="#"><i class="icon_bag_alt"></i><span>{{cartcount}}</span></a>
-                                <div class="cart-hover">
-                                    <div class="select-items">
-                                        <table>
-                                            <tbody>
-                                                {% for x in cart %}
-                                                <tr>
-                                                    <td class="si-pic"><img src="/media/{{x.cart_image}}" width="50px" alt></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                        <p>{{x.cart_price}} x {{x.cart_quantity}}</p>
-                                                        <h6>{{x.cart_name}}</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close"><a href="/delfromcart/{{x.id}}"><i class="ti-close"></i></a></i></td>
-                                                </tr>
-                                                {% endfor %}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="select-total">
-                                        <span>total:</span>
-                                        <h5>{{total}}</h5>
-                                    </div>
-                                    <div class="select-button">
-                                        <a href="/shoppy-cart" class="primary-btn view-card">VIEW CART</a>
-                                        <form action="/check-out/" method="POST">
-                                            {% csrf_token %}
-                                            <button type="submit" class="primary-btn checkout-btn" style="width: 100%;" >CHECK OUT</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="cart-price">{{total}}</li>
-                        </ul>
-                    </div>
-                    {% endif %} -->
+
 
                 </div>
             </div>
@@ -805,27 +738,7 @@
                         </div>
                     </div>
                 </div>
-                    <!-- 
-                <div class="col-sm-2">
-                    <div class="product-inner" style="width: 190px; height: 238px;" >
-                        <div class="product-image" >
-                            <a href="#">
-                                <img width="190px" height="238px" src="./static/img/prdt/product1-300x375.jpg" class="porto-lazyload  wp-post-image" alt="" decoding="async" />
-                            </a>
-                        </div>
-                        <div class="product-contents">
-                            <div class="add-to-wishlist" style="    float: right;position: relative;z-index: 2;margin-left: 10px;">
-                                <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></i></a>
-                            </div>
-                            <a class="product-loop-title" style="font-size: 0.92rem;font-weight: 500;line-height: 1.35;margin-bottom: 0.45rem;font: var(--porto-h3-fst,normal) var(--porto-h3-fw,700) var(--porto-h3-fs,1.8em)/var(--porto-h3-lh,32px) var(--porto-h3-ff,var(--porto-body-ff)),sans-serif;
-                            color: var(--porto-h3-color,var(--porto-heading-color));
-                            letter-spacing: var(--porto-h3-ls,-0.05em); text-align: center;" href="product/cotton-bomber-jacket/index.html">
-                                <span class="woocommerce-loop-product__title">Cotton Bomber Jacket</span>	
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                    -->
+                  
             </div>
         </div>
         <div class="product-off" style="margin-left: 2rem;margin-right: 2rem;margin-top: 2rem;">
@@ -941,121 +854,11 @@
         </div>
 
         
-            <!-- 
-        <div class="product-off" style="margin-left: 2rem;margin-right: 2rem;margin-top: 2rem;">
-            <div class="row">
-                <div class="col-md-12 col-lg-6">
-                    <div class="col-inner">
-                        <div style="background:#f4f4f4;min-height:170px;">
-                            <img alt="" width="835" height="180" src="./static/img/off_home_banner1.jpg">
-                            <div class="no-padding d-flex" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;">
-                                <div class="bannertexts">
-                                    <h5 style="font-size: 0.8125em;color: rgba(255,255,255,0.7);line-height: 1;font-weight:500;letter-spacing:.08em" class="vc_custom_heading mb-2 align-left" >Find the Boundaries. Push Through!</h5>
-                                    <h3 style="color: rgba(255,255,255,0.7);font-size: 2.275em;line-height: 1;letter-spacing:.2em;font-family: 'handlee','Savoye LET Plain';" class="vc_custom_heading custom-font4 mb-0 align-left heading-light">Summer Sale</h3>
-                                    <h4 style="color: rgba(255,255,255,0.7);font-size: 4em;line-height: 1" class="vc_custom_heading mb-0 align-left heading-light" >30% OFF</h4>
-                                    <style>
-                                        .bannertexts {left:8%;right: unset;top: 50%;bottom: unset;transform: translateY(-50%);    text-align: left;
-                                        font-size: 1rem;
-                                        position: absolute;
-                                        z-index: 10;}</style>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            -->
+      
           
         
     </section>
 
-<!-- 
-<section class="catagory-s">
-    <div class="container">
-        <div class="row">
-            <div>
-                <h3 class="inner-text">CATEGORIES</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="product-slider owl-carousel">
-                           
-                            {% for x in cats %}
-                            <div class="product-item">
-                                <div class="pi-pic">
-                                    <a href="/products/{{x.id}}" class="pi-pic"><img src="/media/{{x.cat_image}}" alt></a>
-                                </div>
-                                <div class="pi-text">
-                                    <div class="catagory-name">
-                                        <a href="/products/{{x.id}}"class="catagory-name">{{x.cat_name}}</a></div>
-                                    
-                                        <div class="product-price">
-                                            <a href="/products/{{x.id}}" class="product-price">
-                                        {{x.cat_count}}
-                                        
-                                        Products</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {%endfor%}  
-                             
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section> -->
-    <!-- 
-    <section class="man-banner spad">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="filter-control">
-                        <ul>
-                            <li class="active">Clothings</li>
-                            <li>Backpacks</li>
-                            <li>Shoes</li>
-                            <li>Accessories</li>
-                        </ul>
-                    </div>
-                    <div class="product-slider owl-carousel">
-                        {% for x in men_products %}
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="/media/{{x.product_image}}" alt>
-                                <div class="sale">Sale</div>
-                                <div class="icon">
-                                    <i class="w-icon active"><a href="/addtolist/{{x.id}}"><i class="icon_heart_alt"></i></a></i>
-                                </div>
-                                <ul>
-                                <li class="w-icon active"><a href="/addtocart/{{x.id}}"><i class="icon_bag_alt"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">-->
-                                <!-- <div class="catagory-name">Coat</div> -->
-                                <!--<a href="#">
-                                <h5>{{x.product_name}}</h5>
-                                </a>
-                                <div class="product-price">
-                                    ₹{{x.product_price}}
-                                </div>
-                            </div>
-                        </div>
-                        {%endfor%}   
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                    <div class="product-large set-bg m-large" data-setbg="./static/img/products/man-large.jpg">
-                        <h2>Men’s</h2>
-                        <a href="#">Discover More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     -->
      <div class="row top-row mb-5" style="  padding-top: 2rem;padding-bottom: 3rem;  padding-left: calc(4vw - 10px);
      padding-right: calc(4vw - 10px);">
         <div class="col-sm-6 col-md-6 col-lg-3" data-appear-animation="fadeInRight" data-appear-animation-delay="200">
@@ -1063,7 +866,7 @@
                 <div class="px-3 px-xl-4">
                     <div class="porto-sicon-top">
                         <div class="porto-just-icon-wrapper porto-icon none" style="color:#222529;font-size:35px;">
-                            <i class="Simple-Line-Icons-earphones-alt"></i>
+                            <i class="fa-solid fa-headset"></i>
                         </div>    
                     </div>
                     <div class="porto-sicon-header">
